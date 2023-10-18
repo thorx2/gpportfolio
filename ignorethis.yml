@@ -1,0 +1,265 @@
+baseURL: 'https://thorx2.github.io/gpportfolio/'
+canonifyURLs: true
+languageCode: en-us
+title: Gaudham
+theme: hugo-profile
+Paginate: 3
+enableRobotsTXT: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  page:
+    - HTML
+    - RSS
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blog
+      weight: 1
+params:
+  title: Gaudham
+  description: A random game developer
+  favicon: /fav.png
+  useBootstrapCDN: false
+  animate: true
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+  navbar:
+    align: ms-auto
+    brandName: Gaudham
+    disableSearch: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+  hero:
+    enable: true
+    intro: 'Hi, my name is'
+    title: Gaudham.
+    subtitle: I build games for mobile and PC
+    content: >-
+      A passionate game developer with close to 8 years of experience in the
+      industry who loves making exciting and unique game mechanics and systems.
+    image: /images/hero.svg
+    bottomImage:
+      enable: true
+    button:
+      enable: false
+      name: Resume
+      url: '#'
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: 'https://github.com/thorx2'
+        - icon: fab fa-linkedin
+          url: 'https://www.linkedin.com/in/gaudhamp/'
+  about:
+    enable: true
+    title: About Me
+    image: /images/me.png
+    content: >-
+      I am a software developer with a passion for game development. I have a
+      8+ years of experince in the industry and have worked with various game engines,
+      and have professional experience in both C++ as well as C#. I am currently working
+      as a game programmer at Hypernova Interactive in Banglore KA, India
+
+
+      I am currently working on a project that will be used to help people find
+      the best way to get around the city.
+    skills:
+      enable: true
+      title: 'Here are a few technologies I''ve worked with:'
+      items:
+        - Unity 3D
+        - Unreal Engine 5
+        - Godot
+        - Coco2dx
+  experience:
+    enable: true
+    items:
+      - job: Game Programmer
+        company: Hypernova Interactive
+        companyUrl: 'https://www.hypernovainteractive.com/'
+        date: Jun 2020 - present
+        content: >-
+          I am currently working as a Gameplay programmer at Hypernova Interactive
+          in Banglore, KA, India. I am part of the engineering team building the core foundational
+          systems for Mayanagari, a 3rd person open world, mobile first cross platform action
+          adventure game.
+        featuredLink:
+          enable: true
+          name: Company Website
+          url: 'https://www.hypernovainteractive.com/'
+      - job: Software Developer
+        company: Longbow Games Pvt Ltd
+        companyUrl: 'https://www.longbowgamesindia.in/'
+        date: Jun 2019 - May 2020
+        content: >
+          Worked closely with Wargaming Helsinki as well as Wargaming Berlin as both a tools programmer as well
+          as a gameplay programmer. Built UI systems for War Tanks during its soft launch period. Later as a
+          tools programmer for procedurally generating terrain meshes based of real world data from sources such
+          as Google Maps for a RTS 4x game during it's prototype phase. 
+        featuredLink:
+          enable: true
+          name: Company Website
+          url: 'https://www.longbowgamesindia.in/'
+        info:
+          enable: true
+          content: I worked as a software developer for more than one year in Amazon.
+      - job: Game Programmer
+        company: Ruby Seven Studios
+        companyUrl: 'https://www.rubyseven.com/'
+        date: Feb 2015 - Jun 2019
+        content: >
+          Started my career in game development by making Social casino games built on top of a custom Coco2d-x
+          SDK. UI element flow management such as sale, new game or announcement UI elements like popups where my forte.
+          Specilized in the Android platform, debuging platform specific issues and various 3rd party SDK integrtion into the game.
+        info:
+          enable: false
+        featuredLink:
+          enable: true
+          name: Company Website
+          url: 'https://www.rubyseven.com/'
+  education:
+    enable: true
+    index: false
+    items:
+      - title: Bachelor of Technology in Electronics and Commnucation
+        date: 2010 - 2014
+        GPA: 6.68 out of 10
+        content: >-
+          
+        school:
+          name: Adi Shankara Institute of Engineering and Technology
+          # url: 'https://example.org'
+        featuredLink:
+          enable: false
+          name: My academic record
+          url: 'https://example.com'
+      - title: High School
+        GPA: 4.2 out of 5.0
+        school:
+          name: Thomas Jefferson High School for Science and Technology.
+          # url: 'https://example.org'
+        featuredLink:
+          enable: false
+          url: 'https://example.com'
+  achievements:
+    enable: false
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: 'https://example.com'
+        image: /images/achievment.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievment.jpg
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: 'https://github.com/gurusabarish/hugo-profile'
+        image: /images/achievment.jpg
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: 'https://example.com'
+  projects:
+    enable: false
+    items:
+      - title: Hugo Profile
+        content: >-
+          A highly customizable and mobile first Hugo template for personal
+          portfolio and blog.
+        image: /images/projects/profile.png
+        badges:
+          - Hugo
+          - Bootstrap
+          - Javascript
+        featured:
+          name: Demo
+          link: 'https://hugo-profile.netlify.app'
+        links:
+          - icon: fa fa-envelope
+            url: >-
+              mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+          - icon: fab fa-github
+            url: 'https://github.com/gurusabarish/hugo-profile'
+          - icon: fab fa-twitter
+            url: >-
+              https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+      - title: Image Converter
+        content: >-
+          A web app to convert image to pdf, png to jpg, png to jpg and png to
+          webp without database using django.
+        image: /images/projects/converter.jpg
+        badges:
+          - Django
+          - Bootstrap
+        featured:
+          name: Demo
+          link: 'https://django-converter.herokuapp.com'
+        links:
+          - icon: fab fa-github
+            url: 'https://github.com/gurusabarish/converter'
+      - title: Hugo Profile V2
+        content: A clean and simple Hugo template for personal portfolio and blog.
+        image: /images/projects/profile2.jpg
+        badges:
+          - Hugo
+          - Bootstrap
+          - Javascript
+        featured:
+          name: Demo V2
+          link: 'https://hugo-profile-2.netlify.app'
+        links:
+          - icon: fab fa-github
+            url: 'https://github.com/gurusabarish/HugoProfileV2'
+  contact:
+    enable: true
+    content: >-
+      Reach out to me on my socials. Whether you have a question or just want to
+      say hi, I’ll try my best to get back to you!
+  footer:
+    recentPosts:
+      path: blog
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: 'https://github.com'
+      linkedin: 'https://linkedin.com'
+  listPages:
+    disableFeaturedImage: false
+  singlePages:
+    readTime:
+      enable: true
+      content: min read
+    scrollprogress:
+      enable: true
+  terms:
+    read: Read
+    toc: Table Of Contents
+    copyright: All rights reserved
+    pageNotFound: Page not found
+    emailText: Check out this site
+  datesFormat:
+    article: 'Jan 2, 2006'
+    articleList: 'Jan 2, 2006'
+    articleRecent: 'Jan 2, 2006'

@@ -1,44 +1,24 @@
 baseURL = "https://thorx2.github.io/gpportfolio/"
-canonifyURLs= true
+canonifyURLs = true
 languageCode = "en-us"
 title = "Gaudham"
 theme = "hugo-profile"
-Paginate = 3.0
+Paginate = 3
 enableRobotsTXT = true
 
 [outputs]
-home = [
-  "HTML",
-  "RSS",
-  "JSON"
-]
-page = [
-  "HTML",
-  "RSS"
-]
+home = [ "HTML", "RSS", "JSON" ]
+page = [ "HTML", "RSS" ]
 
-[markup]
+[markup.goldmark.renderer]
+unsafe = true
 
-  [markup.goldmark]
-
-    [markup.goldmark.renderer]
-    unsafe = true
-
-[Menus]
-
-  [[Menus.main]]
-  identifier = "blog"
-  name = "Blog"
-  title = "Blog posts"
-  url = "/blogs"
-  weight = 1.0
-
-  [[Menus.main]]
-  identifier = "gallery"
-  name = "Gallery"
-  title = "Blog posts"
-  url = "/gallery"
-  weight = 2.0
+[[Menus.main]]
+identifier = "blog"
+name = "Blog"
+title = "Blog posts"
+url = "/blog"
+weight = 1
 
 [params]
 title = "Gaudham"
@@ -49,13 +29,13 @@ animate = true
 
   [params.font]
   fontSize = "1rem"
-  fontWeight = 400.0
+  fontWeight = 400
   lineHeight = 1.5
   textAlign = "left"
 
   [params.navbar]
   align = "ms-auto"
-  brandName = "Hugo Profile"
+  brandName = "Gaudham"
   disableSearch = false
 
     [params.navbar.menus]
@@ -84,35 +64,27 @@ animate = true
     download = true
     newPage = false
 
-    [params.hero.socialLinks]
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-github"
+url = "https://github.com/thorx2"
 
-      [[params.hero.socialLinks.fontAwesomeIcons]]
-      icon = "fab fa-github"
-      url = "https://example.com"
-
-      [[params.hero.socialLinks.fontAwesomeIcons]]
-      icon = "fab fa-linkedin"
-      url = "https://example.com"
-
-#      [[params.hero.socialLinks.customIcons]]
-#      icon = "/fav.png"
-#      url = "https://example.com"
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-linkedin"
+url = "https://www.linkedin.com/in/gaudhamp/"
 
   [params.about]
   enable = true
   title = "About Me"
   image = "/images/me.png"
-  content = "I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. \n\nI am currently working on a project that will be used to help people find the best way to get around the city."
+  content = """
+I am a software developer with a passion for game development. I have a 8+ years of experince in the industry and have worked with various game engines, and have professional experience in both C++ as well as C#. I am currently working as a game programmer at Hypernova Interactive in Banglore KA, India
+
+I am currently working on a project that will be used to help people find the best way to get around the city."""
 
     [params.about.skills]
     enable = true
     title = "Here are a few technologies I've worked with:"
-    items = [
-      "Unity 3D",
-      "Unreal Engine 5",
-      "Godot",
-      "Coco2dx",
-    ]
+    items = [ "Unity 3D", "Unreal Engine 5", "Godot", "Coco2dx" ]
 
   [params.experience]
   enable = true
@@ -120,37 +92,41 @@ animate = true
     [[params.experience.items]]
     job = "Game Programmer"
     company = "Hypernova Interactive"
-    companyUrl = "https://example.com"
-    date = "Jan 2022 - present"
-    content = "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+    companyUrl = "https://www.hypernovainteractive.com/"
+    date = "Jun 2020 - present"
+    content = "I am currently working as a Gameplay programmer at Hypernova Interactive in Banglore, KA, India. I am part of the engineering team building the core foundational systems for Mayanagari, a 3rd person open world, mobile first cross platform action adventure game."
 
       [params.experience.items.featuredLink]
       enable = true
       name = "Company Website"
-      url = "https://example.com"
+      url = "https://www.hypernovainteractive.com/"
 
     [[params.experience.items]]
     job = "Software Developer"
     company = "Longbow Games Pvt Ltd"
-    companyUrl = "https://example.com"
-    date = "Sep 2020 - Dec 2021"
-    content = "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.\n\n- Lead backend developer for a product.\n- Created a frontend design for a product.\n"
+    companyUrl = "https://www.longbowgamesindia.in/"
+    date = "Jun 2019 - May 2020"
+    content = """
+Worked closely with Wargaming Helsinki as well as Wargaming Berlin as both a tools programmer as well as a gameplay programmer. Built UI systems for War Tanks during its soft launch period. Later as a tools programmer for procedurally generating terrain meshes based of real world data from sources such as Google Maps for a RTS 4x game during it's prototype phase. 
+"""
 
       [params.experience.items.featuredLink]
       enable = true
       name = "Company Website"
-      url = "https://example.com"
+      url = "https://www.longbowgamesindia.in/"
 
       [params.experience.items.info]
       enable = true
-      content = "I worked as a software developer for more than one year in Amazon."
+      content = "I worked as a software developer as well as tools programmer at Longbow."
 
     [[params.experience.items]]
     job = "Game Programmer"
     company = "Ruby Seven Studios"
-    companyUrl = "https://example.com"
-    date = "Jan 2020 - Aug 2020"
-    content = "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.\n\n- Lead backend developer for a product.\n- Created a frontend design for a product.\n"
+    companyUrl = "https://www.rubyseven.com/"
+    date = "Feb 2015 - Jun 2019"
+    content = """
+Started my career in game development by making Social casino games built on top of a custom Coco2d-x SDK. UI element flow management such as sale, new game or announcement UI elements like popups where my forte. Specilized in the Android platform, debuging platform specific issues and various 3rd party SDK integrtion into the game.
+"""
 
       [params.experience.items.info]
       enable = false
@@ -158,31 +134,20 @@ animate = true
       [params.experience.items.featuredLink]
       enable = true
       name = "Company Website"
-      url = "https://example.com"
+      url = "https://www.rubyseven.com/"
 
   [params.education]
   enable = true
   index = false
 
-#    [[params.education.items]]
-#    title = "Master of Business Administration"
-#    date = "2013 - 2015"
-#    GPA = "3.8 out of 5.0"
-#    content = "Extracurricular Activities\n  - Lorem ipsum dolor sit amet consectetur adipisicing elit. \n  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."
-
-#      [params.education.items.school]
-#      name = "University of California, Berkeley"
-#      url = "https://example.org"
-
     [[params.education.items]]
-    title = "Bachelor of Science in Computer Science"
-    date = "2009 - 2013"
-    GPA = "3.9 out of 5.0"
-    content = "I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.\n- [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)\n- Face mask detection using a single convolutional neural network.\n\nExtracurricular Activities\n  - Lorem ipsum dolor sit amet consectetur adipisicing elit. \n  - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique."
+    title = "Bachelor of Technology in Electronics and Commnucation"
+    date = "2010 - 2014"
+    GPA = "6.68 out of 10"
+    content = ""
 
       [params.education.items.school]
-      name = "Massachusetts Institute of Technology"
-      url = "https://example.org"
+      name = "Adi Shankara Institute of Engineering and Technology"
 
       [params.education.items.featuredLink]
       enable = false
@@ -191,11 +156,11 @@ animate = true
 
     [[params.education.items]]
     title = "High School"
-    GPA = "4.2 out of 5.0"
+#    GPA = "78% Overall Percentage"
+    content = "Passed with a final percentage of 78% majoring in Computer Science."
 
       [params.education.items.school]
-      name = "Thomas Jefferson High School for Science and Technology."
-      url = "https://example.org"
+      name = "Bharatiya Vidya Bhavan."
 
       [params.education.items.featuredLink]
       enable = false
@@ -231,17 +196,13 @@ animate = true
     url = "https://example.com"
 
   [params.projects]
-  enable = true
+  enable = false
 
     [[params.projects.items]]
     title = "Hugo Profile"
     content = "A highly customizable and mobile first Hugo template for personal portfolio and blog."
     image = "/images/projects/profile.png"
-    badges = [
-      "Hugo",
-      "Bootstrap",
-      "Javascript"
-    ]
+    badges = [ "Hugo", "Bootstrap", "Javascript" ]
 
       [params.projects.items.featured]
       name = "Demo"
@@ -263,10 +224,7 @@ animate = true
     title = "Image Converter"
     content = "A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django."
     image = "/images/projects/converter.jpg"
-    badges = [
-      "Django",
-      "Bootstrap"
-    ]
+    badges = [ "Django", "Bootstrap" ]
 
       [params.projects.items.featured]
       name = "Demo"
@@ -280,11 +238,7 @@ animate = true
     title = "Hugo Profile V2"
     content = "A clean and simple Hugo template for personal portfolio and blog."
     image = "/images/projects/profile2.jpg"
-    badges = [
-      "Hugo",
-      "Bootstrap",
-      "Javascript"
-    ]
+    badges = [ "Hugo", "Bootstrap", "Javascript" ]
 
       [params.projects.items.featured]
       name = "Demo V2"
@@ -297,36 +251,27 @@ animate = true
   [params.contact]
   enable = true
   content = "Reach out to me on my socials. Whether you have a question or just want to say hi, I’ll try my best to get back to you!"
-#  email = "gurusabarisha@gmail.com"
-#  btnName = "Mail me"
 
-  [params.footer]
+[params.footer.recentPosts]
+path = "blog"
+count = 3
+title = "Recent Posts"
+enable = true
+disableFeaturedImage = false
 
-    [params.footer.recentPosts]
-    path = "blogs"
-    count = 3.0
-    title = "Recent Posts"
-    enable = true
-    disableFeaturedImage = false
-
-    [params.footer.socialNetworks]
-    github = "https://github.com"
-    linkedin = "https://linkedin.com"
-    twitter = "https://twitter.com"
-#    instagram = "https://instagram.com"
-#    facebook = "https://facebook.com"
+[params.footer.socialNetworks]
+github = "https://github.com"
+linkedin = "https://linkedin.com"
 
   [params.listPages]
   disableFeaturedImage = false
 
-  [params.singlePages]
+[params.singlePages.readTime]
+enable = true
+content = "min read"
 
-    [params.singlePages.readTime]
-    enable = true
-    content = "min read"
-
-    [params.singlePages.scrollprogress]
-    enable = true
+[params.singlePages.scrollprogress]
+enable = true
 
   [params.terms]
   read = "Read"
