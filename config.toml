@@ -1,5 +1,5 @@
 baseURL = "https://thorx2.github.io/gpportfolio/"
-canonifyURLs: true
+canonifyURLs= true
 languageCode = "en-us"
 title = "Hugo Profile"
 theme = "hugo-profile"
