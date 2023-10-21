@@ -52,7 +52,7 @@ animate = true
   title = "Gaudham."
   subtitle = "I build games for mobile and PC"
   content = "A passionate game developer with close to 8 years of experience in the industry who loves making exciting and unique game mechanics and systems."
-  image = "/images/hero.svg"
+  image = "/images/me.png"
 
     [params.hero.bottomImage]
     enable = true
@@ -75,9 +75,9 @@ url = "https://www.linkedin.com/in/gaudhamp/"
   [params.about]
   enable = true
   title = "About Me"
-  image = "/images/me.png"
+#  image = "/images/me.png"
   content = """
-I am a software developer with a passion for game development. I have a 8+ years of experince in the industry and have worked with various game engines, and have professional experience in both C++ as well as C#. I am currently working as a game programmer at Hypernova Interactive in Banglore KA, India
+I am a software developer with a passion for game development. I have a 8+ years of experience in the industry and have worked with various game engines, and have professional experience in both C++ as well as C#. I am currently working as a game programmer at Hypernova Interactive in Banglore KA, India
 
 I am currently working on a project that will be used to help people find the best way to get around the city."""
 
@@ -125,7 +125,7 @@ Worked closely with Wargaming Helsinki as well as Wargaming Berlin as both a too
     companyUrl = "https://www.rubyseven.com/"
     date = "Feb 2015 - Jun 2019"
     content = """
-Started my career in game development by making Social casino games built on top of a custom Coco2d-x SDK. UI element flow management such as sale, new game or announcement UI elements like popups where my forte. Specilized in the Android platform, debuging platform specific issues and various 3rd party SDK integrtion into the game.
+Started my career in game development by making Social casino games built on top of a custom Coco2d-x SDK. UI element flow management such as sale, new game or announcement UI elements like popups where my forte. Specialized in the Android platform, debuging platform specific issues and various 3rd party SDK integration into the game.
 """
 
       [params.experience.items.info]
