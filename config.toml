@@ -72,6 +72,10 @@ url = "https://github.com/thorx2"
 icon = "fab fa-linkedin"
 url = "https://www.linkedin.com/in/gaudhamp/"
 
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-itch-io"
+url = "https://thorx2.itch.io/"
+
   [params.about]
   enable = true
   title = "About Me"
