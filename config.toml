@@ -260,8 +260,8 @@ enable = true
 disableFeaturedImage = false
 
 [params.footer.socialNetworks]
-github = "https://github.com"
-linkedin = "https://linkedin.com"
+github = "https://github.com/thorx2"
+linkedin = "https://www.linkedin.com/in/gaudhamp/"
 
   [params.listPages]
   disableFeaturedImage = false
