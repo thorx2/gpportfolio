@@ -20,6 +20,13 @@ title = "Blog posts"
 url = "/blog"
 weight = 1
 
+[[Menus.main]]
+identifier = "privacy"
+name = "Privacy Policy"
+title = "Privacy Policy"
+url = "/privacy"
+weight = 2
+
 [params]
 title = "Gaudham"
 description = "A random game developer"
@@ -260,7 +267,7 @@ Started my career in game development by making Social casino games built on top
 path = "blog"
 count = 3
 title = "Recent Posts"
-enable = true
+enable = false
 disableFeaturedImage = false
 
 [params.footer.socialNetworks]
