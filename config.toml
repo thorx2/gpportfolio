@@ -51,7 +51,7 @@ animate = true
     disableEducation = false
     disableProjects = false
     disableAchievements = false
-    disableContact = false
+    disableContact = true
 
   [params.hero]
   enable = true
