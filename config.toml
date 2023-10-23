@@ -83,6 +83,10 @@ url = "https://www.linkedin.com/in/gaudhamp/"
 icon = "fab fa-itch-io"
 url = "https://thorx2.itch.io/"
 
+[[params.hero.socialLinks.fontAwesomeIcons]]
+icon = "fab fa-google-play"
+url = "https://play.google.com/store/apps/dev?id=5836476752700085717"
+
   [params.about]
   enable = true
   title = "About Me"
