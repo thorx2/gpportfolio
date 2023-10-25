@@ -225,7 +225,6 @@ Started my career in game development by making Social casino games built on top
     - Simplistic "AI" systems for targets.
     - Core Gameplay elements such as Tank and Tower governed completely though C++ Code.
     """
-#    image = "/images/projects/profile.png"
     badges = [ "Unreal Engine 5", "C++", "Game Systems" ]
 
       [params.projects.items.featured]
@@ -244,16 +243,16 @@ Started my career in game development by making Social casino games built on top
 #      icon = "fab fa-twitter"
 #      url = "https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile"
 
-#    [[params.projects.items]]
-#    title = "Image Converter"
-#    content = "A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django."
+    [[params.projects.items]]
+    title = "Valiant Attempt"
+    content = "A gameplay and game systems clone of ArcherIO, which I built as a machine test for a technical interview cycle."
 #    image = "/images/projects/converter.jpg"
-#    badges = [ "Django", "Bootstrap" ]
-#
-#      [params.projects.items.featured]
-#      name = "Demo"
-#      link = "https://django-converter.herokuapp.com"
-#
+    badges = [ "Unity 3D", "Gameplay Systems", "Game Mechanics" ]
+
+      [params.projects.items.featured]
+      name = "Github Repo"
+      link = "https://github.com/thorx2/valiant_attempt"
+
 #      [[params.projects.items.links]]
 #      icon = "fab fa-github"
 #      url = "https://github.com/gurusabarish/converter"
