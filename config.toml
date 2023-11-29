@@ -253,6 +253,14 @@ Started my career in game development by making Social casino games built on top
       name = "Github Repo"
       link = "https://github.com/thorx2/valiant_attempt"
 
+    [[params.projects.items]]
+    title = "Godot RTS"
+    content = "Simplistic and minimal bare bones RTS style project in Godot."
+    badges = [ "Godot", "Gameplay Systems", "Game Mechanics" ]
+      [params.projects.items.featured]
+      name = "Github Repo"
+      link = "https://github.com/thorx2/gots_rts_poc"
+
 #      [[params.projects.items.links]]
 #      icon = "fab fa-github"
 #      url = "https://github.com/gurusabarish/converter"
